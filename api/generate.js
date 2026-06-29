@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     const fullPrompt = `Bạn là trợ lý AI của nhóm LDP Milwaukee. Dưới đây là knowledge base:\n\n${kb}\n\nHãy trả lời câu hỏi dựa trên knowledge base. Nếu không có thông tin, nói rõ. Trả lời bằng tiếng Việt.\n\nCâu hỏi: ${userPrompt}`;
 
-    const apiKey = "AQ.Ab8RN6Iyl3rq5Wj_qbjPBbkj5pE61K2Oe7xm-3CFJJGwRMxNDQ";
+    const apiKey = "AQ.Ab8RN6I2aFAK7CN9mB1VBuYV4StIBnGsNoIcYZdBQP1aNnG3Kw";
 
     const response = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
