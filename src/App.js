@@ -157,7 +157,10 @@ export default function App() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ userPrompt: searchQ }),
+        body: JSON.stringify({ 
+          userPrompt: searchQ,
+          knowledge: localStorage.getItem("ldp_kb_entries")
+        }),
       });
 
       if (!response.ok) {
